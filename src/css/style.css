@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700&subset=latin,cyrillic);
+
+body{
+width: 100%;
+overflow-x: hidden;
+font-family: 'Roboto Slab', serif;
+}
+
+/** 
+ * Slideshow style rules.
+ */
+.slideshow {
+	margin:150px auto;
+	width:960px;
+	position:relative;
+}
+
+.slidesContainer {
+  margin:0 auto;
+  width:715px;
+  height: 400px;
+padding-top: 10px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+.slide {
+  margin:0 auto;
+}
+
+
+.img {
+border-radius: 50%;
+border: 6px solid #fff;
+box-shadow: 0px 0px 2px #c2c2c2;
+/* margin-left: 50px; */
+margin-right: 20px;
+float: left;
+display: block;
+}
+
+.slide_info{
+width: 365px;
+margin-top: 15%;
+margin-left: 370px;
+}
+
+.slide_info__title{
+font-size: 1.7em;
+font-weight: 400;
+color: #47b616;
+}
+
+.slide_info__text{
+font-size: 0.8em;
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  top:40%;
+  display:block;
+  width: 90px;
+  height: 90px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+border-radius: 50%;
+z-index: 1;
+}
+
+.control:hover{
+  border: 1px solid rgb(202, 202, 202);
+}
+
+.control:active{
+background-color: #f0f0f0;
+box-shadow: inset 1px 1px 1px 1px #989898;
+}
+.leftControl {
+  left:0;
+  background:transparent url('../img/prew.png') no-repeat 30% 50%;
+}
+.rightControl {
+  right:0;
+  background:transparent url('../img/next.png') no-repeat 60% 50%;
+}
+
+.contentnav{
+width: 960px;
+height: 10px;
+background: #f0f0f0;
+box-shadow: inset 1px 1px 1px #969696;
+margin-bottom: 50px;
+}
+
+.contentnav__item{
+display: inline-block;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+margin-left: 65px;
+margin-right: 76px;
+font-weight: 700;
+padding: 10px;
+background: #f0f0f0;
+box-shadow: inset 0px 1px 2px 0px rgba(150, 150, 150, 1);
+vertical-align: middle;
+margin-top: -15px;
+}
+
+
+
+.contentnav__item:first-child{
+margin-left: -2px;
+}
+
+.contentnav__item:last-child{
+margin-right: -4px;
+}
+
+.contentnav__item__link{
+text-decoration: none;
+color: #a3a3a3;	
+line-height: 20px;
+text-align: center;
+display: block;
+}
